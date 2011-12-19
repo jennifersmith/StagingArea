@@ -5,7 +5,8 @@
     :content-type :json
     :should-match "$.accounts.account_id"
     :sample-data [
-                  {:accounts [{:account_id "1234" } {:account_id "45667"}]}]  ;; HACK!!
+                  {:accounts
+                   [{:acounnt_id 12344} {:account_id 4566} {:account_id 12345 } {:account_id 1234} ] }]
     }
    {
     :status 202

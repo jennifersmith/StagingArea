@@ -56,7 +56,7 @@
 (def app
   (wrap-params handler))
 
-(def server (run-jetty #'app {:port 9007 :join? false}))
+(def server (run-jetty #'app {:port 9008 :join? false}))
 
 (defn restart-server []
   (.stop server)
